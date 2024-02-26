@@ -1,0 +1,34 @@
+<p>dashboard works!</p>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">firstName</th>
+        <th scope="col">middleName</th>
+        <th scope="col">lastName</th>
+        <th scope="col">userId</th>
+        <th scope="col">altMobileNo</th>
+        <th scope="col">mobileNo</th>   
+        <th scope="col">emailId</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr *ngFor="let item of userList">
+       <td>{{item.firstName}}</td>
+       <td>{{item.middleName}}</td>
+       <td>{{item.lastName}}</td>
+       <td>{{item.userId}}</td>
+       <td>{{item.altMobileNo}}</td>
+       <td>{{item.mobileNo}}</td>
+       <td>{{item.emailId}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- <ng-container *ngIf="userList.length > 0; else error" >
+    <p>Data Loading.....</p>
+</ng-container>
+<ng-template #error>
+    <p>Error While Loading</p>
+</ng-template> -->
